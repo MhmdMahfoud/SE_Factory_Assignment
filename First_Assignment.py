@@ -1,6 +1,9 @@
 Balance=1000
 Choices=0
-while Choices !=4:
+password=123
+user_password=int(input("enter password"))
+if user_password==password:
+   while Choices !=4:
     print("""Welcome to the ATM
 1. Check Balance
 2. Deposit Money
@@ -13,7 +16,6 @@ while Choices !=4:
         amount=float(input("how much to deposit ?"))
         if amount >0:
             Balance=Balance+amount
-            print("Your New Balance  is" +str(Balance))
         else:
             print("amount should be greater then 0")
     elif Choices == 3:
