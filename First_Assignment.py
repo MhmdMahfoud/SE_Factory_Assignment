@@ -16,6 +16,7 @@ if user_password==password:
         amount=float(input("how much to deposit ?"))
         if amount >0:
             Balance=Balance+amount
+            print("Your New balance is "+str(Balance))
         else:
             print("amount should be greater then 0")
     elif Choices == 3:
